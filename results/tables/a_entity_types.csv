@@ -1,0 +1,11 @@
+entity_type,entity_group,entities,entity_years,entity_years_with_energy,first_year,last_year
+aggregate,Continent (OWID),6,751,361,1900,2025
+aggregate,European Union (27),1,126,61,1900,2025
+aggregate,Income group (World Bank),4,500,225,1900,2024
+aggregate,Source region: Ember,12,322,322,1990,2025
+aggregate,Source region: Energy Institute,30,1718,1260,1965,2024
+aggregate,Source region: Shift Dataportal,14,1398,0,1900,2016
+aggregate,Source region: US EIA,19,832,832,1980,2023
+aggregate,World,1,126,61,1900,2025
+country,Country,221,17291,10630,1900,2025
+historical_country,Historical country,6,313,88,1900,2005

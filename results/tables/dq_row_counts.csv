@@ -1,0 +1,11 @@
+entity,raw_rows,distinct_rows,clean_rows,grain
+dim_entity,,,314,entity
+dim_source,,,9,energy source
+dim_year,,,126,year
+entities (country column),,,314,country / historical country / aggregate
+fact_energy_mix,,,75193,"entity x year x source (countries, World, continents, 1965+)"
+fact_energy_year,,,13840,entity x year with any energy or electricity value
+fact_energy_year (countries only),,,10630,country x year
+owid-co2-data rows,50411,50411,50411,entity x year
+owid-energy-data rows,23377,23377,23377,entity x year (all entities)
+real countries,,,221,ISO 3166 alpha-3 (+ Kosovo)

@@ -1,0 +1,9 @@
+entity,entity_type,continent,iso_code_override,reason
+USSR,historical_country,Europe,,dissolved 1991; EI reports it until 1984 then successor states from 1985 (no overlap in the energy-mix columns)
+Czechoslovakia,historical_country,Europe,,dissolved 1993; successors Czechia and Slovakia
+East Germany,historical_country,Europe,,merged into Germany 1990
+West Germany,historical_country,Europe,,merged into Germany 1990
+Yugoslavia,historical_country,Europe,,dissolved 1991-1992; successors reported separately
+Serbia and Montenegro,historical_country,Europe,,split 2006; Serbia and Montenegro reported separately
+Kosovo,country,Europe,OWID_KOS,real country with no ISO 3166 code in the file (iso_code empty); OWID's own code OWID_KOS assigned
+Antarctica,country,Antarctica,,has ISO code ATA but no OWID continent row

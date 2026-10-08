@@ -1,0 +1,10 @@
+source_key,source,source_label,category,is_low_carbon,is_renewable
+1,coal,Coal,fossil,0,0
+2,oil,Oil,fossil,0,0
+3,gas,Gas,fossil,0,0
+4,nuclear,Nuclear,nuclear,1,0
+5,hydro,Hydropower,renewable,1,1
+6,solar,Solar,renewable,1,1
+7,wind,Wind,renewable,1,1
+8,biofuel,Biofuels,renewable,1,1
+9,other_renewable,"Other renewables (geothermal, biomass ...)",renewable,1,1

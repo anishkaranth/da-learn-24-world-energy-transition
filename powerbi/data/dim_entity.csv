@@ -1,0 +1,315 @@
+entity_key,entity,iso_code,entity_type,entity_group,continent,first_year,last_year,is_country
+1,Afghanistan,AFG,country,Country,Asia,1900,2024,1
+2,Albania,ALB,country,Country,Europe,1900,2024,1
+3,Algeria,DZA,country,Country,Africa,1900,2024,1
+4,American Samoa,ASM,country,Country,Oceania,1980,2024,1
+5,Angola,AGO,country,Country,Africa,1900,2024,1
+6,Antarctica,ATA,country,Country,Antarctica,1980,2023,1
+7,Antigua and Barbuda,ATG,country,Country,North America,1980,2024,1
+8,Argentina,ARG,country,Country,South America,1900,2025,1
+9,Armenia,ARM,country,Country,Asia,1992,2025,1
+10,Aruba,ABW,country,Country,North America,1986,2024,1
+11,Australia,AUS,country,Country,Oceania,1900,2025,1
+12,Austria,AUT,country,Country,Europe,1900,2025,1
+13,Azerbaijan,AZE,country,Country,Asia,1985,2025,1
+14,Bahamas,BHS,country,Country,North America,1980,2024,1
+15,Bahrain,BHR,country,Country,Asia,1900,2024,1
+16,Bangladesh,BGD,country,Country,Asia,1900,2025,1
+17,Barbados,BRB,country,Country,North America,1900,2024,1
+18,Belarus,BLR,country,Country,Europe,1985,2025,1
+19,Belgium,BEL,country,Country,Europe,1900,2025,1
+20,Belize,BLZ,country,Country,North America,1980,2024,1
+21,Benin,BEN,country,Country,Africa,1980,2024,1
+22,Bermuda,BMU,country,Country,North America,1980,2024,1
+23,Bhutan,BTN,country,Country,Asia,1980,2024,1
+24,Bolivia,BOL,country,Country,South America,1900,2025,1
+25,Bosnia and Herzegovina,BIH,country,Country,Europe,1992,2025,1
+26,Botswana,BWA,country,Country,Africa,1900,2024,1
+27,Brazil,BRA,country,Country,South America,1900,2025,1
+28,British Virgin Islands,VGB,country,Country,North America,1980,2023,1
+29,Brunei,BRN,country,Country,Asia,1900,2024,1
+30,Bulgaria,BGR,country,Country,Europe,1900,2025,1
+31,Burkina Faso,BFA,country,Country,Africa,1980,2024,1
+32,Burundi,BDI,country,Country,Africa,1900,2024,1
+33,Cambodia,KHM,country,Country,Asia,1980,2025,1
+34,Cameroon,CMR,country,Country,Africa,1900,2024,1
+35,Canada,CAN,country,Country,North America,1900,2025,1
+36,Cape Verde,CPV,country,Country,Africa,1980,2024,1
+37,Cayman Islands,CYM,country,Country,North America,1980,2024,1
+38,Central African Republic,CAF,country,Country,Africa,1980,2023,1
+39,Chad,TCD,country,Country,Africa,1965,2024,1
+40,Chile,CHL,country,Country,South America,1900,2025,1
+41,China,CHN,country,Country,Asia,1900,2025,1
+42,Colombia,COL,country,Country,South America,1900,2025,1
+43,Comoros,COM,country,Country,Africa,1980,2023,1
+44,Congo,COG,country,Country,Africa,1900,2024,1
+45,Cook Islands,COK,country,Country,Oceania,1980,2024,1
+46,Costa Rica,CRI,country,Country,North America,1980,2025,1
+47,Cote d'Ivoire,CIV,country,Country,Africa,1900,2024,1
+48,Croatia,HRV,country,Country,Europe,1990,2025,1
+49,Cuba,CUB,country,Country,North America,1900,2024,1
+50,Curacao,CUW,country,Country,North America,1965,2024,1
+51,Cyprus,CYP,country,Country,Europe,1965,2025,1
+52,Czechia,CZE,country,Country,Europe,1965,2025,1
+53,Democratic Republic of Congo,COD,country,Country,Africa,1900,2024,1
+54,Denmark,DNK,country,Country,Europe,1900,2025,1
+55,Djibouti,DJI,country,Country,Africa,1980,2024,1
+56,Dominica,DMA,country,Country,North America,1980,2023,1
+57,Dominican Republic,DOM,country,Country,North America,1980,2025,1
+58,East Timor,TLS,country,Country,Asia,2003,2024,1
+59,Ecuador,ECU,country,Country,South America,1900,2025,1
+60,Egypt,EGY,country,Country,Africa,1900,2025,1
+61,El Salvador,SLV,country,Country,North America,1980,2025,1
+62,Equatorial Guinea,GNQ,country,Country,Africa,1965,2024,1
+63,Eritrea,ERI,country,Country,Africa,1994,2024,1
+64,Estonia,EST,country,Country,Europe,1985,2025,1
+65,Eswatini,SWZ,country,Country,Africa,1900,2024,1
+66,Ethiopia,ETH,country,Country,Africa,1980,2025,1
+67,Falkland Islands,FLK,country,Country,South America,1980,2023,1
+68,Faroe Islands,FRO,country,Country,Europe,1980,2023,1
+69,Fiji,FJI,country,Country,Oceania,1980,2024,1
+70,Finland,FIN,country,Country,Europe,1965,2025,1
+71,France,FRA,country,Country,Europe,1900,2025,1
+72,French Guiana,GUF,country,Country,South America,1980,2023,1
+73,French Polynesia,PYF,country,Country,Oceania,1980,2024,1
+74,Gabon,GAB,country,Country,Africa,1900,2024,1
+75,Gambia,GMB,country,Country,Africa,1980,2024,1
+76,Georgia,GEO,country,Country,Asia,1992,2025,1
+77,Germany,DEU,country,Country,Europe,1900,2025,1
+78,Ghana,GHA,country,Country,Africa,1900,2024,1
+79,Gibraltar,GIB,country,Country,Europe,1980,2024,1
+80,Greece,GRC,country,Country,Europe,1900,2025,1
+81,Greenland,GRL,country,Country,North America,1900,2024,1
+82,Grenada,GRD,country,Country,North America,1980,2024,1
+83,Guadeloupe,GLP,country,Country,North America,1980,2023,1
+84,Guam,GUM,country,Country,Oceania,1980,2024,1
+85,Guatemala,GTM,country,Country,North America,1900,2024,1
+86,Guinea,GIN,country,Country,Africa,1980,2024,1
+87,Guinea-Bissau,GNB,country,Country,Africa,1980,2024,1
+88,Guyana,GUY,country,Country,South America,1965,2024,1
+89,Haiti,HTI,country,Country,North America,1980,2024,1
+90,Honduras,HND,country,Country,North America,1980,2024,1
+91,Hong Kong,HKG,country,Country,Asia,1965,2024,1
+92,Hungary,HUN,country,Country,Europe,1900,2025,1
+93,Iceland,ISL,country,Country,Europe,1965,2024,1
+94,India,IND,country,Country,Asia,1900,2025,1
+95,Indonesia,IDN,country,Country,Asia,1900,2024,1
+96,Iran,IRN,country,Country,Asia,1900,2025,1
+97,Iraq,IRQ,country,Country,Asia,1900,2024,1
+98,Ireland,IRL,country,Country,Europe,1900,2025,1
+99,Israel,ISR,country,Country,Asia,1900,2025,1
+100,Italy,ITA,country,Country,Europe,1900,2025,1
+101,Jamaica,JAM,country,Country,North America,1980,2024,1
+102,Japan,JPN,country,Country,Asia,1900,2025,1
+103,Jordan,JOR,country,Country,Asia,1980,2024,1
+104,Kazakhstan,KAZ,country,Country,Asia,1985,2025,1
+105,Kenya,KEN,country,Country,Africa,1980,2025,1
+106,Kiribati,KIR,country,Country,Oceania,1980,2024,1
+107,Kosovo,OWID_KOS,country,Country,Europe,2000,2025,1
+108,Kuwait,KWT,country,Country,Asia,1900,2025,1
+109,Kyrgyzstan,KGZ,country,Country,Asia,1992,2025,1
+110,Laos,LAO,country,Country,Asia,1980,2024,1
+111,Latvia,LVA,country,Country,Europe,1985,2025,1
+112,Lebanon,LBN,country,Country,Asia,1980,2024,1
+113,Lesotho,LSO,country,Country,Africa,1980,2024,1
+114,Liberia,LBR,country,Country,Africa,1980,2024,1
+115,Libya,LBY,country,Country,Africa,1900,2024,1
+116,Lithuania,LTU,country,Country,Europe,1985,2025,1
+117,Luxembourg,LUX,country,Country,Europe,1965,2025,1
+118,Macao,MAC,country,Country,Asia,1980,2024,1
+119,Madagascar,MDG,country,Country,Africa,1900,2024,1
+120,Malawi,MWI,country,Country,Africa,1980,2024,1
+121,Malaysia,MYS,country,Country,Asia,1900,2025,1
+122,Maldives,MDV,country,Country,Asia,1980,2024,1
+123,Mali,MLI,country,Country,Africa,1980,2024,1
+124,Malta,MLT,country,Country,Europe,1980,2025,1
+125,Martinique,MTQ,country,Country,North America,1980,2023,1
+126,Mauritania,MRT,country,Country,Africa,1980,2024,1
+127,Mauritius,MUS,country,Country,Africa,1980,2024,1
+128,Mexico,MEX,country,Country,North America,1900,2025,1
+129,Micronesia (country),FSM,country,Country,Oceania,1980,2023,1
+130,Moldova,MDA,country,Country,Europe,1992,2025,1
+131,Mongolia,MNG,country,Country,Asia,1900,2025,1
+132,Montenegro,MNE,country,Country,Europe,2005,2025,1
+133,Montserrat,MSR,country,Country,North America,1980,2024,1
+134,Morocco,MAR,country,Country,Africa,1900,2025,1
+135,Mozambique,MOZ,country,Country,Africa,1900,2024,1
+136,Myanmar,MMR,country,Country,Asia,1900,2024,1
+137,Namibia,NAM,country,Country,Africa,1990,2024,1
+138,Nauru,NRU,country,Country,Oceania,1980,2024,1
+139,Nepal,NPL,country,Country,Asia,1900,2024,1
+140,Netherlands,NLD,country,Country,Europe,1900,2025,1
+141,Netherlands Antilles,ANT,country,Country,North America,1965,2024,1
+142,New Caledonia,NCL,country,Country,Oceania,1980,2024,1
+143,New Zealand,NZL,country,Country,Oceania,1900,2025,1
+144,Nicaragua,NIC,country,Country,North America,1980,2024,1
+145,Niger,NER,country,Country,Africa,1900,2024,1
+146,Nigeria,NGA,country,Country,Africa,1900,2025,1
+147,Niue,NIU,country,Country,Oceania,1980,2023,1
+148,North Korea,PRK,country,Country,Asia,1900,2024,1
+149,North Macedonia,MKD,country,Country,Europe,1990,2025,1
+150,Northern Mariana Islands,MNP,country,Country,Oceania,1980,2023,1
+151,Norway,NOR,country,Country,Europe,1900,2025,1
+152,Oman,OMN,country,Country,Asia,1900,2025,1
+153,Pakistan,PAK,country,Country,Asia,1900,2025,1
+154,Palestine,PSE,country,Country,Asia,1997,2024,1
+155,Panama,PAN,country,Country,North America,1980,2024,1
+156,Papua New Guinea,PNG,country,Country,Oceania,1980,2024,1
+157,Paraguay,PRY,country,Country,South America,1980,2025,1
+158,Peru,PER,country,Country,South America,1900,2025,1
+159,Philippines,PHL,country,Country,Asia,1900,2025,1
+160,Poland,POL,country,Country,Europe,1900,2025,1
+161,Portugal,PRT,country,Country,Europe,1900,2025,1
+162,Puerto Rico,PRI,country,Country,North America,1980,2025,1
+163,Qatar,QAT,country,Country,Asia,1900,2025,1
+164,Reunion,REU,country,Country,Africa,1980,2023,1
+165,Romania,ROU,country,Country,Europe,1900,2025,1
+166,Russia,RUS,country,Country,Europe,1985,2025,1
+167,Rwanda,RWA,country,Country,Africa,1980,2024,1
+168,Saint Helena,SHN,country,Country,Africa,1980,2023,1
+169,Saint Kitts and Nevis,KNA,country,Country,North America,1980,2024,1
+170,Saint Lucia,LCA,country,Country,North America,1980,2024,1
+171,Saint Pierre and Miquelon,SPM,country,Country,North America,1980,2023,1
+172,Saint Vincent and the Grenadines,VCT,country,Country,North America,1980,2024,1
+173,Samoa,WSM,country,Country,Oceania,1980,2024,1
+174,Sao Tome and Principe,STP,country,Country,Africa,1980,2023,1
+175,Saudi Arabia,SAU,country,Country,Asia,1900,2024,1
+176,Senegal,SEN,country,Country,Africa,1980,2024,1
+177,Serbia,SRB,country,Country,Europe,1990,2025,1
+178,Seychelles,SYC,country,Country,Africa,1980,2024,1
+179,Sierra Leone,SLE,country,Country,Africa,1980,2024,1
+180,Singapore,SGP,country,Country,Asia,1965,2025,1
+181,Slovakia,SVK,country,Country,Europe,1965,2025,1
+182,Slovenia,SVN,country,Country,Europe,1990,2025,1
+183,Solomon Islands,SLB,country,Country,Oceania,1980,2024,1
+184,Somalia,SOM,country,Country,Africa,1980,2024,1
+185,South Africa,ZAF,country,Country,Africa,1900,2025,1
+186,South Korea,KOR,country,Country,Asia,1900,2025,1
+187,South Sudan,SSD,country,Country,Africa,2012,2024,1
+188,Spain,ESP,country,Country,Europe,1900,2025,1
+189,Sri Lanka,LKA,country,Country,Asia,1965,2025,1
+190,Sudan,SDN,country,Country,Africa,1965,2024,1
+191,Suriname,SUR,country,Country,South America,1900,2024,1
+192,Sweden,SWE,country,Country,Europe,1900,2025,1
+193,Switzerland,CHE,country,Country,Europe,1900,2025,1
+194,Syria,SYR,country,Country,Asia,1900,2024,1
+195,Taiwan,TWN,country,Country,Asia,1900,2025,1
+196,Tajikistan,TJK,country,Country,Asia,1992,2025,1
+197,Tanzania,TZA,country,Country,Africa,1900,2024,1
+198,Thailand,THA,country,Country,Asia,1900,2025,1
+199,Togo,TGO,country,Country,Africa,1980,2024,1
+200,Tonga,TON,country,Country,Oceania,1980,2024,1
+201,Trinidad and Tobago,TTO,country,Country,North America,1900,2024,1
+202,Tunisia,TUN,country,Country,Africa,1900,2025,1
+203,Turkey,TUR,country,Country,Asia,1900,2025,1
+204,Turkmenistan,TKM,country,Country,Asia,1985,2024,1
+205,Turks and Caicos Islands,TCA,country,Country,North America,1980,2024,1
+206,Tuvalu,TUV,country,Country,Oceania,1980,2023,1
+207,Uganda,UGA,country,Country,Africa,1980,2024,1
+208,Ukraine,UKR,country,Country,Europe,1900,2024,1
+209,United Arab Emirates,ARE,country,Country,Asia,1900,2024,1
+210,United Kingdom,GBR,country,Country,Europe,1900,2025,1
+211,United States,USA,country,Country,North America,1900,2025,1
+212,United States Virgin Islands,VIR,country,Country,North America,1980,2023,1
+213,Uruguay,URY,country,Country,South America,1980,2025,1
+214,Uzbekistan,UZB,country,Country,Asia,1985,2025,1
+215,Vanuatu,VUT,country,Country,Oceania,1980,2023,1
+216,Venezuela,VEN,country,Country,South America,1900,2024,1
+217,Vietnam,VNM,country,Country,Asia,1900,2025,1
+218,Western Sahara,ESH,country,Country,Africa,1980,2023,1
+219,Yemen,YEM,country,Country,Asia,1980,2024,1
+220,Zambia,ZMB,country,Country,Africa,1900,2024,1
+221,Zimbabwe,ZWE,country,Country,Africa,1900,2024,1
+222,Czechoslovakia,,historical_country,Historical country,Europe,1900,1992,0
+223,East Germany,,historical_country,Historical country,Europe,1980,1990,0
+224,Serbia and Montenegro,,historical_country,Historical country,Europe,1992,2005,0
+225,USSR,,historical_country,Historical country,Europe,1900,1991,0
+226,West Germany,,historical_country,Historical country,Europe,1980,1990,0
+227,Yugoslavia,,historical_country,Historical country,Europe,1900,1991,0
+228,ASEAN (Ember),,aggregate,Source region: Ember,,2000,2025,0
+229,Africa,,aggregate,Continent (OWID),,1900,2024,0
+230,Africa (EI),,aggregate,Source region: Energy Institute,,1965,2024,0
+231,Africa (EIA),,aggregate,Source region: US EIA,,1980,2023,0
+232,Africa (Ember),,aggregate,Source region: Ember,,2000,2025,0
+233,Africa (Shift),,aggregate,Source region: Shift Dataportal,,1900,2016,0
+234,Asia,,aggregate,Continent (OWID),,1900,2024,0
+235,Asia (Ember),,aggregate,Source region: Ember,,2000,2025,0
+236,Asia Pacific (EI),,aggregate,Source region: Energy Institute,,1965,2024,0
+237,Asia and Oceania (EIA),,aggregate,Source region: US EIA,,1980,2023,0
+238,Asia and Oceania (Shift),,aggregate,Source region: Shift Dataportal,,1900,2016,0
+239,Australia and New Zealand (EIA),,aggregate,Source region: US EIA,,1980,2023,0
+240,CIS (EI),,aggregate,Source region: Energy Institute,,1965,2024,0
+241,Central America (EI),,aggregate,Source region: Energy Institute,,1965,2024,0
+242,Central and South America (EIA),,aggregate,Source region: US EIA,,1980,2023,0
+243,Central and South America (Shift),,aggregate,Source region: Shift Dataportal,,1900,2016,0
+244,EU (Ember),,aggregate,Source region: Ember,,1990,2025,0
+245,EU28 (Shift),,aggregate,Source region: Shift Dataportal,,1900,2016,0
+246,Eastern Africa (EI),,aggregate,Source region: Energy Institute,,1965,2024,0
+247,Eastern Europe and Eurasia (EIA),,aggregate,Source region: US EIA,,1980,2023,0
+248,Eurasia (EIA),,aggregate,Source region: US EIA,,1980,2023,0
+249,Eurasia (Shift),,aggregate,Source region: Shift Dataportal,,1900,2016,0
+250,Europe,,aggregate,Continent (OWID),,1900,2025,0
+251,Europe (EI),,aggregate,Source region: Energy Institute,,1965,2024,0
+252,Europe (EIA),,aggregate,Source region: US EIA,,1980,2023,0
+253,Europe (Ember),,aggregate,Source region: Ember,,2000,2025,0
+254,Europe (Shift),,aggregate,Source region: Shift Dataportal,,1900,2016,0
+255,European Union (27),,aggregate,European Union (27),,1900,2025,0
+256,G20 (Ember),,aggregate,Source region: Ember,,2000,2025,0
+257,G7 (Ember),,aggregate,Source region: Ember,,2000,2025,0
+258,High-income countries,,aggregate,Income group (World Bank),,1900,2024,0
+259,Latin America and Caribbean (Ember),,aggregate,Source region: Ember,,2000,2025,0
+260,Low-income countries,,aggregate,Income group (World Bank),,1900,2024,0
+261,Lower-middle-income countries,,aggregate,Income group (World Bank),,1900,2024,0
+262,Middle Africa (EI),,aggregate,Source region: Energy Institute,,1965,2024,0
+263,Middle East (EI),,aggregate,Source region: Energy Institute,,1965,2024,0
+264,Middle East (EIA),,aggregate,Source region: US EIA,,1980,2023,0
+265,Middle East (Ember),,aggregate,Source region: Ember,,2000,2025,0
+266,Middle East (Shift),,aggregate,Source region: Shift Dataportal,,1900,2016,0
+267,Non-OECD (EI),,aggregate,Source region: Energy Institute,,1965,2024,0
+268,Non-OECD (EIA),,aggregate,Source region: US EIA,,1980,2023,0
+269,Non-OPEC (EI),,aggregate,Source region: Energy Institute,,1965,2024,0
+270,Non-OPEC (EIA),,aggregate,Source region: US EIA,,1980,2023,0
+271,North America,,aggregate,Continent (OWID),,1900,2024,0
+272,North America (EI),,aggregate,Source region: Energy Institute,,1965,2024,0
+273,North America (Ember),,aggregate,Source region: Ember,,2000,2025,0
+274,North America (Shift),,aggregate,Source region: Shift Dataportal,,1900,2016,0
+275,OECD (EI),,aggregate,Source region: Energy Institute,,1965,2024,0
+276,OECD (EIA),,aggregate,Source region: US EIA,,1980,2023,0
+277,OECD (Ember),,aggregate,Source region: Ember,,2000,2025,0
+278,OECD (Shift),,aggregate,Source region: Shift Dataportal,,1900,2016,0
+279,OPEC (EI),,aggregate,Source region: Energy Institute,,1965,2024,0
+280,OPEC (EIA),,aggregate,Source region: US EIA,,1980,2023,0
+281,OPEC (Shift),,aggregate,Source region: Shift Dataportal,,1900,2016,0
+282,Oceania,,aggregate,Continent (OWID),,1900,2024,0
+283,Oceania (Ember),,aggregate,Source region: Ember,,2000,2025,0
+284,Other Africa (EI),,aggregate,Source region: Energy Institute,,1965,2024,0
+285,Other Americas (EIA),,aggregate,Source region: US EIA,,1980,2023,0
+286,Other Asia Pacific (EI),,aggregate,Source region: Energy Institute,,1965,2024,0
+287,Other Asia-Pacific (EIA),,aggregate,Source region: US EIA,,1980,2023,0
+288,Other CIS (EI),,aggregate,Source region: Energy Institute,,1965,2024,0
+289,Other Caribbean (EI),,aggregate,Source region: Energy Institute,,1965,2024,0
+290,Other Eastern Africa (EI),,aggregate,Source region: Energy Institute,,1981,2024,0
+291,Other Europe (EI),,aggregate,Source region: Energy Institute,,1965,2024,0
+292,Other Middle Africa (EI),,aggregate,Source region: Energy Institute,,1976,2024,0
+293,Other Middle East (EI),,aggregate,Source region: Energy Institute,,1965,2024,0
+294,Other North America (EI),,aggregate,Source region: Energy Institute,,1990,2024,0
+295,Other Northern Africa (EI),,aggregate,Source region: Energy Institute,,1965,2024,0
+296,Other South America (EI),,aggregate,Source region: Energy Institute,,1965,2024,0
+297,Other South and Central America (EI),,aggregate,Source region: Energy Institute,,1965,2024,0
+298,Other Southern Africa (EI),,aggregate,Source region: Energy Institute,,1965,2024,0
+299,Other Western Africa (EI),,aggregate,Source region: Energy Institute,,1965,2024,0
+300,Persian Gulf (EIA),,aggregate,Source region: US EIA,,1980,2023,0
+301,Persian Gulf (Shift),,aggregate,Source region: Shift Dataportal,,1900,2016,0
+302,Rest of World (EI),,aggregate,Source region: Energy Institute,,1995,2024,0
+303,South America,,aggregate,Continent (OWID),,1900,2024,0
+304,South and Central America (EI),,aggregate,Source region: Energy Institute,,1965,2024,0
+305,U.S. Pacific Islands (EIA),,aggregate,Source region: US EIA,,1980,2023,0
+306,U.S. Territories (EIA),,aggregate,Source region: US EIA,,1980,2019,0
+307,United States Pacific Islands (Shift),,aggregate,Source region: Shift Dataportal,,1980,2016,0
+308,United States Territories (Shift),,aggregate,Source region: Shift Dataportal,,1980,2016,0
+309,Upper-middle-income countries,,aggregate,Income group (World Bank),,1900,2024,0
+310,Wake Island (EIA),,aggregate,Source region: US EIA,,1980,2023,0
+311,Wake Island (Shift),,aggregate,Source region: Shift Dataportal,,1980,2016,0
+312,Western Africa (EI),,aggregate,Source region: Energy Institute,,1965,2024,0
+313,Western Europe (EIA),,aggregate,Source region: US EIA,,1980,2023,0
+314,World,,aggregate,World,,1900,2025,0

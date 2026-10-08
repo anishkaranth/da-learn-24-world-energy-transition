@@ -1,0 +1,39 @@
+rnk,entity,continent,electricity_twh_latest,coal_share_2000,coal_share_peak,peak_year,coal_share_latest,change_pp,coal_twh_2000,coal_twh_peak,peak_coal_year,coal_twh_latest,status
+1,Greece,Europe,57.1,64.81,67.43,2001,5.73,-59.08,34.3,35.5,2005,3.3,falling (>= 10 pp)
+2,Israel,Asia,80.4,68.5,77.18,2004,14.3,-54.19,29.2,38.7,2012,11.5,falling (>= 10 pp)
+3,Denmark,Europe,35.1,46.5,55.06,2003,4.99,-41.51,16.7,25.3,2003,1.8,phased down (< 5%)
+4,Poland,Europe,172.1,94.91,94.91,2000,54.32,-40.59,135.9,147.0,2006,93.5,falling (>= 10 pp)
+5,North Macedonia,Europe,6.3,76.51,87.44,2001,37.4,-39.1,5.2,5.6,2001,2.4,falling (>= 10 pp)
+6,Australia,Oceania,281.6,83.13,83.13,2000,45.21,-37.92,180.3,185.8,2006,127.3,falling (>= 10 pp)
+7,United States,North America,4391.0,51.72,51.72,2000,14.85,-36.86,1966.3,2016.5,2007,652.2,falling (>= 10 pp)
+8,Czechia,Europe,72.8,72.36,72.36,2000,36.42,-35.93,52.8,53.8,2007,26.5,falling (>= 10 pp)
+9,Spain,Europe,280.9,35.8,35.8,2000,0.92,-34.88,79.1,81.2,2002,2.6,phased down (< 5%)
+10,Portugal,Europe,47.3,33.79,33.79,2000,0.0,-33.79,14.6,15.2,2005,0.0,phased down (< 5%)
+11,United Kingdom,Europe,284.2,31.81,39.24,2012,0.67,-31.14,120.0,148.9,2006,1.9,phased down (< 5%)
+12,Germany,Europe,496.0,52.15,52.15,2000,21.44,-30.71,296.7,304.6,2003,106.3,falling (>= 10 pp)
+13,Ireland,Europe,31.1,28.86,28.86,2000,2.03,-26.83,6.8,7.1,2001,0.6,phased down (< 5%)
+14,Hong Kong,Asia,37.4,60.37,77.84,2003,33.65,-26.71,18.9,30.4,2014,12.6,falling (>= 10 pp)
+15,Romania,Europe,52.7,36.7,42.56,2003,13.43,-23.27,18.9,25.8,2008,7.1,falling (>= 10 pp)
+16,Netherlands,Europe,122.3,27.57,36.14,2015,6.11,-21.47,24.3,39.4,2015,7.5,falling (>= 10 pp)
+17,Hungary,Europe,38.0,27.25,27.25,2000,6.42,-20.83,9.6,9.6,2000,2.4,falling (>= 10 pp)
+18,China,Asia,10086.9,78.21,80.96,2007,57.77,-20.44,1060.3,5827.6,2024,5827.6,falling (>= 10 pp)
+19,Bulgaria,Europe,38.3,41.73,55.1,2011,22.87,-18.86,16.9,27.5,2011,8.8,falling (>= 10 pp)
+20,Kazakhstan,Asia,118.5,69.52,81.1,2011,54.03,-15.49,35.9,75.7,2018,64.0,falling (>= 10 pp)
+21,Mongolia,Asia,8.8,98.28,98.28,2000,84.69,-13.58,2.9,7.5,2024,7.5,falling (>= 10 pp)
+22,Slovenia,Europe,16.7,33.87,36.95,2003,20.95,-12.93,4.6,5.5,2007,3.5,falling (>= 10 pp)
+23,Zimbabwe,Africa,10.3,53.36,62.15,2001,42.89,-10.48,3.7,4.9,2001,4.4,falling (>= 10 pp)
+24,South Africa,Africa,247.5,93.07,94.72,2006,83.55,-9.52,196.1,247.6,2007,206.8,slightly lower
+25,North Korea,Asia,27.1,43.52,49.71,2019,34.06,-9.46,8.4,11.9,2019,9.2,slightly lower
+26,South Korea,Asia,625.4,39.55,46.27,2009,30.51,-9.05,114.9,260.8,2017,190.8,slightly lower
+27,Taiwan,Asia,288.6,48.8,55.49,2003,40.07,-8.74,90.2,134.2,2018,115.6,slightly lower
+28,Morocco,Africa,42.4,68.61,77.63,2001,61.75,-6.87,9.4,29.0,2022,26.2,slightly lower
+29,Kosovo,Europe,6.8,97.64,98.15,2012,91.29,-6.35,2.9,6.4,2021,6.2,slightly lower
+30,Chile,South America,88.6,20.6,41.52,2013,15.3,-5.3,8.5,30.3,2016,13.6,slightly lower
+31,Serbia,Europe,37.0,67.07,75.51,2011,62.93,-4.14,21.4,28.7,2011,23.3,slightly lower
+32,Russia,Europe,1209.3,20.01,20.01,2000,17.79,-2.22,175.6,215.2,2024,215.2,slightly lower
+33,Turkey,Asia,341.2,30.7,37.6,2019,35.55,4.85,38.2,121.3,2024,121.3,flat or rising
+34,India,Asia,2036.5,68.3,76.96,2016,74.53,6.24,390.2,1517.9,2024,1517.9,flat or rising
+35,Bosnia and Herzegovina,Europe,15.5,50.72,75.99,2017,58.68,7.96,5.3,12.4,2018,9.1,flat or rising
+36,Japan,Asia,1016.4,21.67,33.94,2015,32.19,10.52,238.2,363.5,2017,327.1,flat or rising
+37,Indonesia,Asia,371.5,34.68,61.98,2020,61.48,26.8,34.0,228.4,2024,228.4,flat or rising
+38,Philippines,Asia,124.2,36.78,63.91,2024,63.91,27.14,16.7,79.4,2024,79.4,flat or rising

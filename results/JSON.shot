@@ -1,0 +1,273 @@
+{
+ "snapshot": "headline KPIs + run config",
+ "project": "da-learn-24-world-energy-transition",
+ "source_mode": "full",
+ "engine": "duckdb 1.5.6",
+ "config": {
+  "sql_dialect": "Spark SQL style (+ DuckDB shims in sql/00), run on DuckDB; Databricks skipped (workspace quota)",
+  "grain": "fact_energy_year = one entity x year with any energy value; fact_energy_mix = entity x year x source (9 sources)",
+  "entity_rule": "3-letter ISO code = country; USSR, Yugoslavia, Czechoslovakia, East/West Germany, Serbia and Montenegro = historical; Kosovo (no ISO) = country OWID_KOS; empty iso_code / OWID_ prefix = aggregate (World, continents, income groups, EI / EIA / Ember / Shift regions). Country rankings use countries only; World/continent figures use OWID's aggregate rows",
+  "latest_year_rule": "per metric, the last year with >= 90% of peak country coverage: energy mix 2024 (Energy Institute, ~79 countries), electricity + carbon intensity 2024, GDP 2022, all-country primary energy 2023; 2025 is part-year (provisional)",
+  "thresholds": "transitions >= 10 TWh generated; carbon-intensity ranking >= 50 TWh; coal phase-out = coal >= 20% of power in 2000 and >= 5 TWh now; energy vs GDP and decoupling = countries >= 1 million people",
+  "outlier_rules": "energy per capita > 3x the year's country p95 flagged; grid carbon intensity > 900 g/kWh and above a fuel-mix ceiling (coal 1,100 / oil 900 / gas 700 / other 50) flagged and left out of the intensity ranking",
+  "sample_rule": "data/raw: every 4th ISO country + 9 large systems + historical states + 16 aggregates, all years (CO2 from 1900); scripts/make_sample.py"
+ },
+ "headline": {
+  "raw_rows": 23377,
+  "raw_rows_co2": 50411,
+  "clean_entity_years": 23377,
+  "fact_entity_years": 13840,
+  "country_years_with_energy": 10630,
+  "entities": 314,
+  "countries": 221,
+  "historical_countries": 6,
+  "aggregates": 87,
+  "first_year": 1900,
+  "last_year": 2025,
+  "latest_energy_mix_year": 2024,
+  "latest_electricity_year": 2024,
+  "latest_gdp_year": 2022,
+  "world_primary_energy_twh_2000": 110416.0,
+  "world_primary_energy_twh_latest": 176737.0,
+  "world_fossil_share_energy_2000": 86.05,
+  "world_fossil_share_energy_latest": 81.26,
+  "world_low_carbon_share_energy_2000": 13.96,
+  "world_low_carbon_share_energy_latest": 18.74,
+  "world_renewables_share_energy_2000": 7.43,
+  "world_renewables_share_energy_latest": 14.82,
+  "world_fossil_twh_added_since_2000": 47954.0,
+  "world_low_carbon_twh_added_since_2000": 17530.0,
+  "world_renewables_share_elec_2000": 18.72,
+  "world_renewables_share_elec_latest": 31.94,
+  "world_renewables_share_elec_provisional": 33.76,
+  "world_low_carbon_share_elec_2000": 35.34,
+  "world_low_carbon_share_elec_latest": 40.91,
+  "world_solar_wind_share_elec_2000": 0.21,
+  "world_solar_wind_share_elec_latest": 15.04,
+  "world_coal_share_elec_2000": 38.02,
+  "world_coal_share_elec_latest": 34.07,
+  "world_coal_twh_2000": 27456.0,
+  "world_coal_twh_latest": 45851.0,
+  "world_carbon_intensity_2000": 527.3,
+  "world_carbon_intensity_latest": 471.1,
+  "world_co2_mt_2000": 25511.0,
+  "world_co2_mt_latest": 38599.0,
+  "countries_with_elec_mix_latest": 196,
+  "countries_low_carbon_elec_50pct": 77,
+  "countries_low_carbon_elec_90pct": 24,
+  "countries_coal_phased_down": 5,
+  "countries_coal_20pct_in_2000": 38,
+  "corr_log_energy_vs_log_gdp_pc": 0.943,
+  "energy_gdp_elasticity": 1.18,
+  "countries_absolute_decoupling": 43,
+  "countries_in_decoupling_test": 153,
+  "fastest_transition_country": "Denmark",
+  "fastest_transition_pp": 73.65
+ },
+ "world_mix_milestones": [
+  {
+   "year": 1965,
+   "fossil_share_energy": 93.748,
+   "low_carbon_share_energy": 6.252,
+   "renewables_share_energy": 6.088,
+   "renewables_share_elec": null,
+   "solar_wind_share_elec": null,
+   "coal_share_elec": null,
+   "carbon_intensity_elec": null
+  },
+  {
+   "year": 1980,
+   "fossil_share_energy": 91.017,
+   "low_carbon_share_energy": 8.983,
+   "renewables_share_energy": 6.436,
+   "renewables_share_elec": null,
+   "solar_wind_share_elec": null,
+   "coal_share_elec": null,
+   "carbon_intensity_elec": null
+  },
+  {
+   "year": 2000,
+   "fossil_share_energy": 86.045,
+   "low_carbon_share_energy": 13.955,
+   "renewables_share_energy": 7.426,
+   "renewables_share_elec": 18.716,
+   "solar_wind_share_elec": 0.211,
+   "coal_share_elec": 38.019,
+   "carbon_intensity_elec": 527.26
+  },
+  {
+   "year": 2010,
+   "fossil_share_energy": 86.51,
+   "low_carbon_share_energy": 13.49,
+   "renewables_share_energy": 8.37,
+   "renewables_share_elec": 19.721,
+   "solar_wind_share_elec": 1.778,
+   "coal_share_elec": 39.777,
+   "carbon_intensity_elec": 543.85
+  },
+  {
+   "year": 2015,
+   "fossil_share_energy": 85.694,
+   "low_carbon_share_energy": 14.306,
+   "renewables_share_energy": 10.0,
+   "renewables_share_elec": 22.967,
+   "solar_wind_share_elec": 4.523,
+   "coal_share_elec": 38.678,
+   "carbon_intensity_elec": 533.38
+  },
+  {
+   "year": 2020,
+   "fossil_share_energy": 82.985,
+   "low_carbon_share_energy": 17.015,
+   "renewables_share_energy": 12.781,
+   "renewables_share_elec": 27.987,
+   "solar_wind_share_elec": 9.148,
+   "coal_share_elec": 35.314,
+   "carbon_intensity_elec": 492.11
+  },
+  {
+   "year": 2024,
+   "fossil_share_energy": 81.257,
+   "low_carbon_share_energy": 18.743,
+   "renewables_share_energy": 14.822,
+   "renewables_share_elec": 31.935,
+   "solar_wind_share_elec": 15.04,
+   "coal_share_elec": 34.073,
+   "carbon_intensity_elec": 471.08
+  }
+ ],
+ "region_mix_latest": [
+  {
+   "region": "South America",
+   "year": 2024,
+   "fossil_share_energy": 61.322,
+   "nuclear_share_energy": 0.845,
+   "renewables_share_energy": 37.833,
+   "low_carbon_share_elec": 78.773
+  },
+  {
+   "region": "Europe",
+   "year": 2024,
+   "fossil_share_energy": 73.752,
+   "nuclear_share_energy": 8.399,
+   "renewables_share_energy": 17.849,
+   "low_carbon_share_elec": 62.363
+  },
+  {
+   "region": "North America",
+   "year": 2024,
+   "fossil_share_energy": 79.739,
+   "nuclear_share_energy": 6.7,
+   "renewables_share_energy": 13.562,
+   "low_carbon_share_elec": 44.738
+  },
+  {
+   "region": "World",
+   "year": 2024,
+   "fossil_share_energy": 81.257,
+   "nuclear_share_energy": 3.921,
+   "renewables_share_energy": 14.822,
+   "low_carbon_share_elec": 40.914
+  },
+  {
+   "region": "Oceania",
+   "year": 2024,
+   "fossil_share_energy": 81.817,
+   "nuclear_share_energy": 0.0,
+   "renewables_share_energy": 18.183,
+   "low_carbon_share_elec": 41.396
+  },
+  {
+   "region": "Asia",
+   "year": 2024,
+   "fossil_share_energy": 84.989,
+   "nuclear_share_energy": 2.17,
+   "renewables_share_energy": 12.841,
+   "low_carbon_share_elec": 32.063
+  },
+  {
+   "region": "Africa",
+   "year": 2024,
+   "fossil_share_energy": 90.335,
+   "nuclear_share_energy": 0.311,
+   "renewables_share_energy": 9.354,
+   "low_carbon_share_elec": 25.547
+  }
+ ],
+ "fastest_transitions_top5": [
+  {"rnk": 1, "entity": "Denmark", "low_carbon_2000": 15.54, "low_carbon_latest": 89.19, "change_pp": 73.65},
+  {"rnk": 2, "entity": "Portugal", "low_carbon_2000": 29.79, "low_carbon_latest": 85.19, "change_pp": 55.41},
+  {"rnk": 3, "entity": "Kenya", "low_carbon_2000": 40.37, "low_carbon_latest": 91.48, "change_pp": 51.11},
+  {"rnk": 4, "entity": "Netherlands", "low_carbon_2000": 7.84, "low_carbon_latest": 53.66, "change_pp": 45.82},
+  {"rnk": 5, "entity": "Ireland", "low_carbon_2000": 5.04, "low_carbon_latest": 46.53, "change_pp": 41.49}
+ ],
+ "lowest_carbon_grids_top5": [
+  {"rnk": 1, "entity": "Norway", "carbon_intensity_elec": 29.66, "low_carbon_share_elec": 98.606},
+  {"rnk": 2, "entity": "Switzerland", "carbon_intensity_elec": 34.58, "low_carbon_share_elec": 98.099},
+  {"rnk": 3, "entity": "Sweden", "carbon_intensity_elec": 34.91, "low_carbon_share_elec": 98.792},
+  {"rnk": 4, "entity": "France", "carbon_intensity_elec": 40.48, "low_carbon_share_elec": 94.898},
+  {"rnk": 5, "entity": "Finland", "carbon_intensity_elec": 66.63, "low_carbon_share_elec": 95.348}
+ ],
+ "coal_phaseout_top5": [
+  {
+   "rnk": 1,
+   "entity": "Greece",
+   "coal_share_2000": 64.81,
+   "coal_share_latest": 5.73,
+   "change_pp": -59.08,
+   "status": "falling (>= 10 pp)"
+  },
+  {
+   "rnk": 2,
+   "entity": "Israel",
+   "coal_share_2000": 68.5,
+   "coal_share_latest": 14.3,
+   "change_pp": -54.19,
+   "status": "falling (>= 10 pp)"
+  },
+  {
+   "rnk": 3,
+   "entity": "Denmark",
+   "coal_share_2000": 46.5,
+   "coal_share_latest": 4.99,
+   "change_pp": -41.51,
+   "status": "phased down (< 5%)"
+  },
+  {
+   "rnk": 4,
+   "entity": "Poland",
+   "coal_share_2000": 94.91,
+   "coal_share_latest": 54.32,
+   "change_pp": -40.59,
+   "status": "falling (>= 10 pp)"
+  },
+  {
+   "rnk": 5,
+   "entity": "North Macedonia",
+   "coal_share_2000": 76.51,
+   "coal_share_latest": 37.4,
+   "change_pp": -39.1,
+   "status": "falling (>= 10 pp)"
+  }
+ ],
+ "energy_gdp_fit": [
+  {
+   "countries": 154,
+   "year": 2022,
+   "corr_log": 0.943,
+   "elasticity": 1.18,
+   "intercept": -1.691,
+   "median_energy_per_capita_kwh": 13481.0,
+   "median_gdp_per_capita": 12725.0
+  }
+ ],
+ "decoupling_status": [
+  {"status": "relative decoupling", "countries": 63},
+  {"status": "absolute decoupling", "countries": 43},
+  {"status": "CO2 grew faster than GDP", "countries": 40},
+  {"status": "GDP fell", "countries": 7}
+ ],
+ "assertions_passed": 27,
+ "assertions_skipped_on_sample": 0,
+ "assertions_total": 27
+}

@@ -1,0 +1,9 @@
+entity,column_name,null_pct,treatment
+country-years (all),primary_energy_consumption,40.02,early years and small countries have no energy data; kept as NULL
+country-years 2000+,carbon_intensity_elec,3.37,Ember; implausible values flagged
+country-years 2000+,co2_mt (joined),7.77,CO2 file ends 2024; joined on entity + year
+country-years 2000+,electricity_generation,2.91,Ember covers ~214 countries 2000-2024
+country-years 2000+,fossil_share_energy (energy mix),64.57,mix only for Energy Institute countries; others in EI residual regions
+country-years 2000+,gdp,32.02,Maddison GDP ends 2022 and misses small countries
+country-years 2000+,population,0.68,per-capita measures NULL where missing
+country-years 2000+,primary_energy_consumption,4.93,2024 only for ~79 Energy Institute countries (EIA ends 2023)

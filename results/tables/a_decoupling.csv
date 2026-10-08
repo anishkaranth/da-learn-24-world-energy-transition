@@ -1,0 +1,154 @@
+entity,continent,latest_year,gdp_change_pct,co2_change_pct,co2_mt_2005,co2_mt_latest,low_carbon_elec_change_pp,status
+Afghanistan,Asia,2022,109.9,438.1,1.9,10.2,14.51,CO2 grew faster than GDP
+Albania,Europe,2022,75.9,5.6,4.3,4.5,1.3,relative decoupling
+Algeria,Africa,2022,82.3,76.0,109.6,192.8,-0.68,relative decoupling
+Angola,Africa,2022,204.7,37.1,15.4,21.1,-8.85,relative decoupling
+Argentina,South America,2022,42.2,13.6,161.7,183.8,-5.63,relative decoupling
+Armenia,Asia,2022,68.1,75.9,4.4,7.7,-9.17,CO2 grew faster than GDP
+Australia,Oceania,2022,60.0,-0.3,385.1,384.1,23.06,absolute decoupling
+Austria,Europe,2022,28.1,-22.3,79.1,61.5,14.68,absolute decoupling
+Azerbaijan,Asia,2022,173.9,20.4,34.2,41.2,-6.69,relative decoupling
+Bahrain,Asia,2022,156.9,54.5,24.5,37.8,0.22,relative decoupling
+Bangladesh,Asia,2022,206.2,170.8,37.7,102.1,-3.19,relative decoupling
+Belarus,Europe,2022,41.9,-3.8,59.4,57.1,15.85,absolute decoupling
+Belgium,Europe,2022,28.6,-29.2,125.7,88.9,13.5,absolute decoupling
+Benin,Africa,2022,126.4,144.7,2.5,6.1,2.02,CO2 grew faster than GDP
+Bolivia,South America,2022,93.6,90.4,12.3,23.5,-5.17,relative decoupling
+Bosnia and Herzegovina,Europe,2022,46.4,29.3,16.0,20.7,-15.57,relative decoupling
+Botswana,Africa,2022,119.8,80.6,4.1,7.4,0.39,relative decoupling
+Brazil,South America,2022,49.7,31.7,364.4,480.1,0.28,relative decoupling
+Bulgaria,Europe,2022,54.3,-7.2,50.6,46.9,-0.4,absolute decoupling
+Burkina Faso,Africa,2022,110.4,492.6,1.1,6.5,-3.85,CO2 grew faster than GDP
+Burundi,Africa,2022,78.4,455.7,0.2,0.9,-30.77,CO2 grew faster than GDP
+Cambodia,Asia,2022,128.8,844.5,2.2,20.9,60.9,CO2 grew faster than GDP
+Cameroon,Africa,2022,103.9,80.5,5.4,9.8,-29.28,relative decoupling
+Canada,North America,2022,34.4,-4.0,570.4,547.7,6.38,absolute decoupling
+Central African Republic,Africa,2022,0.2,194.5,0.1,0.4,18.75,CO2 grew faster than GDP
+Chad,Africa,2022,98.6,201.4,0.9,2.8,5.13,CO2 grew faster than GDP
+Chile,South America,2022,61.3,40.3,61.1,85.7,1.67,relative decoupling
+China,Asia,2022,213.5,99.1,5882.0,11711.8,16.61,relative decoupling
+Colombia,South America,2022,88.5,48.4,60.3,89.4,-5.66,relative decoupling
+Congo,Africa,2022,38.6,100.6,4.4,8.7,-59.58,CO2 grew faster than GDP
+Costa Rica,North America,2022,85.1,20.3,6.7,8.0,3.3,relative decoupling
+Cote d'Ivoire,Africa,2022,163.0,91.6,7.6,14.5,0.38,relative decoupling
+Croatia,Europe,2022,39.1,-24.5,23.3,17.6,9.38,absolute decoupling
+Cuba,North America,2022,58.4,-9.5,25.7,23.3,1.09,absolute decoupling
+Cyprus,Europe,2022,48.9,-11.1,8.0,7.1,16.73,absolute decoupling
+Czechia,Europe,2022,52.2,-24.4,125.7,95.0,15.9,absolute decoupling
+Democratic Republic of Congo,Africa,2022,202.7,157.6,2.3,5.9,0.14,relative decoupling
+Denmark,Europe,2022,30.7,-43.5,51.5,29.1,53.7,absolute decoupling
+Djibouti,Africa,2022,139.7,32.9,0.4,0.6,35.0,relative decoupling
+Dominican Republic,North America,2022,162.7,74.9,17.9,31.2,3.01,relative decoupling
+Ecuador,South America,2022,55.2,37.2,30.7,42.1,21.98,relative decoupling
+Egypt,Africa,2022,143.3,49.7,166.9,249.9,-0.71,relative decoupling
+El Salvador,North America,2022,56.0,26.4,6.3,7.9,33.94,relative decoupling
+Equatorial Guinea,Africa,2022,0.1,20.8,6.2,7.5,21.79,CO2 grew faster than GDP
+Estonia,Europe,2022,30.9,-30.0,17.1,12.0,30.91,absolute decoupling
+Eswatini,Africa,2022,59.8,1.3,1.0,1.0,-0.41,relative decoupling
+Ethiopia,Africa,2022,338.0,242.2,5.0,17.0,0.35,relative decoupling
+Finland,Europe,2022,17.2,-36.3,57.1,36.3,22.45,absolute decoupling
+France,Europe,2022,19.3,-29.1,416.3,295.3,-1.88,absolute decoupling
+Gabon,Africa,2022,116.3,-7.1,6.2,5.8,-3.63,absolute decoupling
+Gambia,Africa,2022,95.1,153.3,0.3,0.8,0.0,CO2 grew faster than GDP
+Georgia,Asia,2022,115.2,137.8,5.0,12.0,-9.48,CO2 grew faster than GDP
+Germany,Europe,2022,32.7,-23.0,867.9,667.8,13.57,absolute decoupling
+Ghana,Africa,2022,168.4,239.4,6.1,20.7,-46.74,CO2 grew faster than GDP
+Greece,Europe,2022,-6.7,-49.4,113.9,57.6,32.53,GDP fell
+Guatemala,North America,2022,80.7,57.1,12.0,18.9,28.53,relative decoupling
+Guinea,Africa,2022,135.4,127.1,1.8,4.1,12.48,relative decoupling
+Guinea-Bissau,Africa,2022,97.2,273.9,0.1,0.3,0.0,CO2 grew faster than GDP
+Haiti,North America,2022,32.5,67.3,1.7,2.9,-28.46,CO2 grew faster than GDP
+Honduras,North America,2022,79.5,71.8,6.8,11.7,26.57,relative decoupling
+Hong Kong,Asia,2022,37.5,-29.0,43.3,30.8,0.91,absolute decoupling
+Hungary,Europe,2022,55.9,-24.7,60.1,45.3,21.68,absolute decoupling
+India,Asia,2022,179.2,136.8,1195.4,2831.1,4.98,relative decoupling
+Indonesia,Asia,2022,137.3,118.2,347.4,758.0,2.56,relative decoupling
+Iran,Asia,2022,73.0,64.4,466.8,767.2,-2.11,relative decoupling
+Iraq,Asia,2022,208.7,90.4,114.3,217.6,-17.47,relative decoupling
+Ireland,Europe,2022,50.5,-23.8,48.2,36.7,31.83,absolute decoupling
+Israel,Asia,2022,95.0,10.2,56.5,62.3,9.64,relative decoupling
+Italy,Europe,2022,5.3,-32.2,501.4,340.1,19.42,absolute decoupling
+Jamaica,North America,2022,4.4,-24.1,10.4,7.9,9.3,absolute decoupling
+Japan,Asia,2022,7.3,-20.0,1286.4,1029.6,-8.87,absolute decoupling
+Jordan,Asia,2022,90.1,7.9,20.8,22.4,22.51,relative decoupling
+Kazakhstan,Asia,2022,109.8,38.2,198.4,274.3,0.14,relative decoupling
+Kenya,Africa,2022,145.3,143.0,8.5,20.5,21.09,relative decoupling
+Kuwait,Asia,2022,53.3,55.3,74.6,115.8,2.23,CO2 grew faster than GDP
+Kyrgyzstan,Asia,2022,76.7,108.6,5.5,11.5,0.62,CO2 grew faster than GDP
+Laos,Asia,2022,219.3,1586.5,1.3,22.5,-23.86,CO2 grew faster than GDP
+Latvia,Europe,2022,34.4,-15.4,7.8,6.6,6.43,absolute decoupling
+Lebanon,Asia,2022,29.9,-7.7,16.7,15.4,36.67,absolute decoupling
+Lesotho,Africa,2022,23.0,26.8,2.0,2.6,0.0,CO2 grew faster than GDP
+Liberia,Africa,2022,78.6,32.7,0.7,0.9,33.33,relative decoupling
+Libya,Africa,2022,-3.3,5.3,56.0,59.0,0.03,GDP fell
+Lithuania,Europe,2022,60.3,-7.0,13.9,12.9,-0.14,absolute decoupling
+Madagascar,Africa,2022,66.9,141.8,1.7,4.2,-26.09,CO2 grew faster than GDP
+Malawi,Africa,2022,111.1,113.1,0.8,1.8,6.09,CO2 grew faster than GDP
+Malaysia,Asia,2022,119.5,65.8,170.0,281.9,12.79,relative decoupling
+Mali,Africa,2022,82.9,381.5,1.5,7.0,9.3,CO2 grew faster than GDP
+Mauritania,Africa,2022,132.9,267.3,1.4,5.3,18.01,CO2 grew faster than GDP
+Mauritius,Africa,2022,47.4,31.1,3.3,4.3,-5.23,relative decoupling
+Mexico,North America,2022,42.5,-2.1,463.4,453.8,8.8,absolute decoupling
+Moldova,Europe,2022,47.5,4.8,4.9,5.2,3.54,relative decoupling
+Mongolia,Asia,2022,257.1,375.0,8.5,40.4,9.81,CO2 grew faster than GDP
+Morocco,Africa,2022,78.7,56.2,44.7,69.8,9.67,relative decoupling
+Mozambique,Africa,2022,52.2,425.2,1.8,9.3,-16.16,CO2 grew faster than GDP
+Myanmar,Asia,2022,104.9,174.0,11.5,31.6,-8.97,CO2 grew faster than GDP
+Namibia,Africa,2022,55.9,34.8,2.5,3.4,0.26,relative decoupling
+Nepal,Asia,2022,106.9,489.5,3.0,17.6,0.8,CO2 grew faster than GDP
+Netherlands,Europe,2022,32.4,-28.4,178.1,127.5,31.93,absolute decoupling
+New Zealand,Oceania,2022,57.8,-14.5,37.4,32.0,22.53,absolute decoupling
+Nicaragua,North America,2022,84.5,20.6,4.3,5.1,28.46,relative decoupling
+Niger,Africa,2022,152.6,363.2,0.7,3.2,2.53,CO2 grew faster than GDP
+Nigeria,Africa,2022,135.5,29.3,101.7,131.4,-8.33,relative decoupling
+North Korea,Asia,2022,-5.2,-25.0,75.0,56.3,6.0,GDP fell
+North Macedonia,Europe,2022,57.9,-14.5,8.6,7.4,5.63,absolute decoupling
+Norway,Europe,2022,53.1,-5.7,43.3,40.8,-0.82,absolute decoupling
+Oman,Asia,2022,119.1,145.0,31.8,78.0,4.48,CO2 grew faster than GDP
+Pakistan,Asia,2022,105.7,63.1,129.9,212.0,5.15,relative decoupling
+Palestine,Asia,2022,50.8,71.8,2.7,4.7,33.33,CO2 grew faster than GDP
+Panama,North America,2022,163.7,73.6,6.7,11.7,12.96,relative decoupling
+Paraguay,South America,2022,83.8,99.7,3.8,7.5,0.0,CO2 grew faster than GDP
+Peru,South America,2022,109.0,113.7,30.3,64.8,-17.03,CO2 grew faster than GDP
+Philippines,Asia,2022,137.7,108.7,72.3,151.0,-10.21,relative decoupling
+Poland,Europe,2022,106.6,-2.4,322.6,314.9,18.62,absolute decoupling
+Portugal,Europe,2022,16.3,-41.5,69.6,40.7,41.66,absolute decoupling
+Qatar,Asia,2022,396.5,129.8,47.7,109.6,1.32,relative decoupling
+Romania,Europe,2022,106.8,-27.8,101.3,73.2,19.97,absolute decoupling
+Russia,Europe,2022,60.1,7.1,1564.0,1675.5,2.94,relative decoupling
+Rwanda,Africa,2022,172.0,280.7,0.5,2.0,5.06,CO2 grew faster than GDP
+Saudi Arabia,Asia,2022,137.2,61.8,412.2,667.0,0.49,relative decoupling
+Senegal,Africa,2022,106.7,155.2,5.5,14.1,8.0,CO2 grew faster than GDP
+Serbia,Europe,2022,69.1,-11.2,50.1,44.5,-3.63,absolute decoupling
+Sierra Leone,Africa,2022,102.8,234.3,0.4,1.4,70.0,CO2 grew faster than GDP
+Singapore,Asia,2022,142.2,23.6,39.6,48.9,1.58,relative decoupling
+Slovakia,Europe,2022,59.2,-26.3,42.9,31.6,10.41,absolute decoupling
+Slovenia,Europe,2022,37.9,-24.9,16.9,12.7,9.91,absolute decoupling
+South Africa,Africa,2022,53.9,3.0,416.2,428.8,8.76,relative decoupling
+South Korea,Asia,2022,61.6,21.7,498.7,606.9,-1.54,relative decoupling
+Spain,Europe,2022,20.5,-36.3,367.4,234.2,28.73,absolute decoupling
+Sri Lanka,Asia,2022,89.6,57.5,11.7,18.4,10.99,relative decoupling
+Sweden,Europe,2022,39.4,-32.4,53.8,36.3,1.34,absolute decoupling
+Switzerland,Europe,2022,50.7,-28.0,45.8,33.0,1.19,absolute decoupling
+Syria,Asia,2022,-59.6,-38.6,51.2,31.4,-7.68,GDP fell
+Taiwan,Asia,2022,75.9,2.7,266.9,274.0,-4.3,relative decoupling
+Tajikistan,Asia,2022,206.9,331.0,2.4,10.5,-6.6,CO2 grew faster than GDP
+Tanzania,Africa,2022,224.9,267.8,5.4,19.7,-19.65,CO2 grew faster than GDP
+Thailand,Asia,2022,52.1,27.2,214.3,272.6,10.02,relative decoupling
+Togo,Africa,2022,122.9,59.1,1.7,2.7,-16.84,relative decoupling
+Trinidad and Tobago,North America,2022,5.7,-1.9,38.2,37.5,-0.18,absolute decoupling
+Tunisia,Africa,2022,44.2,36.7,22.5,30.8,1.61,relative decoupling
+Turkey,Asia,2022,134.5,65.7,267.7,443.6,17.32,relative decoupling
+Turkmenistan,Asia,2022,137.8,112.9,47.9,102.1,0.03,relative decoupling
+Uganda,Africa,2022,149.2,203.7,2.0,6.1,0.96,CO2 grew faster than GDP
+Ukraine,Europe,2022,-22.6,-54.4,313.5,143.0,17.9,GDP fell
+United Arab Emirates,Asia,2022,197.1,79.7,115.3,207.1,17.92,relative decoupling
+United Kingdom,Europe,2022,21.0,-45.5,570.3,311.1,31.47,absolute decoupling
+United States,North America,2022,32.8,-17.5,6126.9,5055.4,12.22,absolute decoupling
+Uruguay,South America,2022,64.5,30.7,5.7,7.5,3.28,relative decoupling
+Uzbekistan,Asia,2022,180.6,-2.1,121.6,119.1,-9.52,absolute decoupling
+Venezuela,South America,2022,-61.0,-26.9,148.4,108.4,5.08,GDP fell
+Vietnam,Asia,2022,169.8,236.7,95.8,322.7,17.63,CO2 grew faster than GDP
+Yemen,Asia,2022,-32.2,-52.3,21.8,10.4,16.83,GDP fell
+Zambia,Africa,2022,183.9,387.7,2.2,10.9,-10.42,CO2 grew faster than GDP
+Zimbabwe,Africa,2022,40.4,14.3,10.7,12.2,14.88,relative decoupling

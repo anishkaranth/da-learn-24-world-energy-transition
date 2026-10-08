@@ -1,0 +1,58 @@
+// measures.dax  DAX measures for the da-learn-24 world energy transition model (tables as in model.md)
+// RULE 1: never SUM across all entities - dim_entity mixes 221 countries with World, continents, income groups and source regions.
+//         Country measures filter dim_entity[is_country] = 1; "World" measures read the World row.
+// RULE 2: shares of a group are ratios of sums (TWh / TWh), never averages of percentages.
+
+// ---- volumes (countries only) ----
+Primary Energy TWh = CALCULATE ( SUM ( fact_energy_year[primary_energy_twh] ), dim_entity[is_country] = 1 )
+Electricity TWh = CALCULATE ( SUM ( fact_energy_year[electricity_twh] ), dim_entity[is_country] = 1 )
+Fossil Electricity TWh = CALCULATE ( SUM ( fact_energy_year[fossil_elec_twh] ), dim_entity[is_country] = 1 )
+Low-carbon Electricity TWh = CALCULATE ( SUM ( fact_energy_year[low_carbon_elec_twh] ), dim_entity[is_country] = 1 )
+Renewable Electricity TWh = CALCULATE ( SUM ( fact_energy_year[renewables_elec_twh] ), dim_entity[is_country] = 1 )
+Coal Electricity TWh = CALCULATE ( SUM ( fact_energy_year[coal_elec_twh] ), dim_entity[is_country] = 1 )
+Solar + Wind TWh = CALCULATE ( SUM ( fact_energy_year[solar_elec_twh] ) + SUM ( fact_energy_year[wind_elec_twh] ), dim_entity[is_country] = 1 )
+Population = CALCULATE ( SUM ( fact_energy_year[population] ), dim_entity[is_country] = 1 )
+CO2 Mt = CALCULATE ( SUM ( fact_energy_year[co2_mt] ), dim_entity[is_country] = 1 )
+
+// ---- weighted shares (work for one country, a continent slicer, or all countries) ----
+Low-carbon Share of Power % = DIVIDE ( [Low-carbon Electricity TWh], [Electricity TWh] )
+Renewables Share of Power % = DIVIDE ( [Renewable Electricity TWh], [Electricity TWh] )
+Coal Share of Power % = DIVIDE ( [Coal Electricity TWh], [Electricity TWh] )
+Solar + Wind Share of Power % = DIVIDE ( [Solar + Wind TWh], [Electricity TWh] )
+Fossil Share of Energy % =
+    DIVIDE (
+        CALCULATE ( SUM ( fact_energy_year[fossil_twh] ), dim_entity[is_country] = 1, NOT ISBLANK ( fact_energy_year[fossil_twh] ) ),
+        CALCULATE ( SUM ( fact_energy_year[primary_energy_twh] ), dim_entity[is_country] = 1, NOT ISBLANK ( fact_energy_year[fossil_twh] ) )
+    )
+Energy per Person kWh = DIVIDE ( [Primary Energy TWh] * 1e9, [Population] )
+// generation-weighted grid intensity (exclude rows flagged implausible)
+Carbon Intensity g/kWh =
+    DIVIDE (
+        SUMX ( FILTER ( fact_energy_year, RELATED ( dim_entity[is_country] ) = 1 && fact_energy_year[dq_ci_implausible] = 0 ),
+               fact_energy_year[carbon_intensity_g_per_kwh] * fact_energy_year[electricity_twh] ),
+        SUMX ( FILTER ( fact_energy_year, RELATED ( dim_entity[is_country] ) = 1 && fact_energy_year[dq_ci_implausible] = 0
+                        && NOT ISBLANK ( fact_energy_year[carbon_intensity_g_per_kwh] ) ), fact_energy_year[electricity_twh] )
+    )
+
+// ---- World row (OWID's own aggregate) ----
+World Renewables Share of Power % = DIVIDE ( CALCULATE ( MAX ( fact_energy_year[renewables_share_elec] ), dim_entity[entity] = "World" ), 100 )
+World Fossil Share of Energy % = DIVIDE ( CALCULATE ( MAX ( fact_energy_year[fossil_share_energy] ), dim_entity[entity] = "World" ), 100 )
+World Carbon Intensity g/kWh = CALCULATE ( MAX ( fact_energy_year[carbon_intensity_g_per_kwh] ), dim_entity[entity] = "World" )
+Country Share of World Energy % =
+    DIVIDE ( [Primary Energy TWh], CALCULATE ( SUM ( fact_energy_year[primary_energy_twh] ), REMOVEFILTERS ( dim_entity ), dim_entity[entity] = "World" ) )
+
+// ---- change since 2000 (use with a single-year slicer on the latest year) ----
+Low-carbon Share of Power 2000 % = CALCULATE ( [Low-carbon Share of Power %], REMOVEFILTERS ( dim_year ), dim_year[year] = 2000 )
+Low-carbon Change since 2000 pp = ( [Low-carbon Share of Power %] - [Low-carbon Share of Power 2000 %] ) * 100
+Coal Share of Power 2000 % = CALCULATE ( [Coal Share of Power %], REMOVEFILTERS ( dim_year ), dim_year[year] = 2000 )
+Coal Change since 2000 pp = ( [Coal Share of Power %] - [Coal Share of Power 2000 %] ) * 100
+
+// ---- mix (fact_energy_mix, long format: one row per entity x year x source) ----
+Source Energy TWh = CALCULATE ( SUM ( fact_energy_mix[energy_twh] ), dim_entity[is_country] = 1 )
+Source Electricity TWh = CALCULATE ( SUM ( fact_energy_mix[elec_twh] ), dim_entity[is_country] = 1 )
+Source Share of Power % = DIVIDE ( [Source Electricity TWh], CALCULATE ( [Source Electricity TWh], REMOVEFILTERS ( dim_source ) ) )
+Source Share of Energy % = DIVIDE ( [Source Energy TWh], CALCULATE ( [Source Energy TWh], REMOVEFILTERS ( dim_source ) ) )
+Countries = CALCULATE ( DISTINCTCOUNT ( fact_energy_year[entity_key] ), dim_entity[is_country] = 1 )
+Countries >= 50% Low-carbon Power =
+    COUNTROWS ( FILTER ( VALUES ( dim_entity[entity_key] ),
+        CALCULATE ( [Low-carbon Share of Power %] ) >= 0.5 && CALCULATE ( MAX ( dim_entity[is_country] ) ) = 1 ) )

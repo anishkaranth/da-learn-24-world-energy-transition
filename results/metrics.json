@@ -1,0 +1,249 @@
+{
+ "project": "da-learn-24-world-energy-transition",
+ "dataset": "Our World in Data energy dataset (legacy release), the source of Kaggle 'World Energy Consumption' (pralabhpoudel), CC BY 4.0. GitHub mirror owid/energy-data @ f8de88a4: owid-energy-data.csv (23,377 rows x 130 columns, 9,229,369 B, 314 entities, 1900-2025) + owid-energy-codebook.csv; joined with owid/co2-data @ 382ee6c6: owid-co2-data.csv (50,411 rows x 79 columns, 14,377,942 B, 1750-2024)",
+ "source_mode": "full",
+ "kpis": {
+  "raw_rows": 23377,
+  "raw_rows_co2": 50411,
+  "clean_entity_years": 23377,
+  "fact_entity_years": 13840,
+  "country_years_with_energy": 10630,
+  "entities": 314,
+  "countries": 221,
+  "historical_countries": 6,
+  "aggregates": 87,
+  "first_year": 1900,
+  "last_year": 2025,
+  "latest_energy_mix_year": 2024,
+  "latest_electricity_year": 2024,
+  "latest_gdp_year": 2022,
+  "world_primary_energy_twh_2000": 110416.0,
+  "world_primary_energy_twh_latest": 176737.0,
+  "world_fossil_share_energy_2000": 86.05,
+  "world_fossil_share_energy_latest": 81.26,
+  "world_low_carbon_share_energy_2000": 13.96,
+  "world_low_carbon_share_energy_latest": 18.74,
+  "world_renewables_share_energy_2000": 7.43,
+  "world_renewables_share_energy_latest": 14.82,
+  "world_fossil_twh_added_since_2000": 47954.0,
+  "world_low_carbon_twh_added_since_2000": 17530.0,
+  "world_renewables_share_elec_2000": 18.72,
+  "world_renewables_share_elec_latest": 31.94,
+  "world_renewables_share_elec_provisional": 33.76,
+  "world_low_carbon_share_elec_2000": 35.34,
+  "world_low_carbon_share_elec_latest": 40.91,
+  "world_solar_wind_share_elec_2000": 0.21,
+  "world_solar_wind_share_elec_latest": 15.04,
+  "world_coal_share_elec_2000": 38.02,
+  "world_coal_share_elec_latest": 34.07,
+  "world_coal_twh_2000": 27456.0,
+  "world_coal_twh_latest": 45851.0,
+  "world_carbon_intensity_2000": 527.3,
+  "world_carbon_intensity_latest": 471.1,
+  "world_co2_mt_2000": 25511.0,
+  "world_co2_mt_latest": 38599.0,
+  "countries_with_elec_mix_latest": 196,
+  "countries_low_carbon_elec_50pct": 77,
+  "countries_low_carbon_elec_90pct": 24,
+  "countries_coal_phased_down": 5,
+  "countries_coal_20pct_in_2000": 38,
+  "corr_log_energy_vs_log_gdp_pc": 0.943,
+  "energy_gdp_elasticity": 1.18,
+  "countries_absolute_decoupling": 43,
+  "countries_in_decoupling_test": 153,
+  "fastest_transition_country": "Denmark",
+  "fastest_transition_pp": 73.65
+ },
+ "analysis_tables": [
+  "tables/a_kpi_headline.csv",
+  "tables/a_world_mix.csv",
+  "tables/a_region_mix.csv",
+  "tables/a_region_elec_trend.csv",
+  "tables/a_transitions.csv",
+  "tables/a_energy_transitions.csv",
+  "tables/a_energy_gdp.csv",
+  "tables/a_energy_gdp_fit.csv",
+  "tables/a_carbon_intensity.csv",
+  "tables/a_ci_trend.csv",
+  "tables/a_coal_phaseout.csv",
+  "tables/a_coal_consumption.csv",
+  "tables/a_solar_wind_leaders.csv",
+  "tables/a_solar_wind_trend.csv",
+  "tables/a_top_consumers.csv",
+  "tables/a_decoupling.csv",
+  "tables/a_renewables_heatmap.csv",
+  "tables/a_entity_types.csv"
+ ],
+ "data_quality": {
+  "row_counts": [
+   {
+    "entity": "owid-energy-data rows",
+    "raw_rows": 23377,
+    "distinct_rows": 23377,
+    "clean_rows": 23377,
+    "grain": "entity x year (all entities)"
+   },
+   {
+    "entity": "owid-co2-data rows",
+    "raw_rows": 50411,
+    "distinct_rows": 50411,
+    "clean_rows": 50411,
+    "grain": "entity x year"
+   },
+   {
+    "entity": "entities (country column)",
+    "raw_rows": null,
+    "distinct_rows": null,
+    "clean_rows": 314,
+    "grain": "country / historical country / aggregate"
+   },
+   {
+    "entity": "real countries",
+    "raw_rows": null,
+    "distinct_rows": null,
+    "clean_rows": 221,
+    "grain": "ISO 3166 alpha-3 (+ Kosovo)"
+   },
+   {
+    "entity": "fact_energy_year",
+    "raw_rows": null,
+    "distinct_rows": null,
+    "clean_rows": 13840,
+    "grain": "entity x year with any energy or electricity value"
+   },
+   {
+    "entity": "fact_energy_year (countries only)",
+    "raw_rows": null,
+    "distinct_rows": null,
+    "clean_rows": 10630,
+    "grain": "country x year"
+   },
+   {
+    "entity": "fact_energy_mix",
+    "raw_rows": null,
+    "distinct_rows": null,
+    "clean_rows": 75193,
+    "grain": "entity x year x source (countries, World, continents, 1965+)"
+   },
+   {"entity": "dim_entity", "raw_rows": null, "distinct_rows": null, "clean_rows": 314, "grain": "entity"},
+   {"entity": "dim_year", "raw_rows": null, "distinct_rows": null, "clean_rows": 126, "grain": "year"},
+   {
+    "entity": "dim_source",
+    "raw_rows": null,
+    "distinct_rows": null,
+    "clean_rows": 9,
+    "grain": "energy source"
+   }
+  ],
+  "null_rates": [
+   {
+    "entity": "country-years (all)",
+    "column_name": "primary_energy_consumption",
+    "null_pct": 40.02,
+    "treatment": "early years and small countries have no energy data; kept as NULL"
+   },
+   {
+    "entity": "country-years 2000+",
+    "column_name": "primary_energy_consumption",
+    "null_pct": 4.93,
+    "treatment": "2024 only for ~79 Energy Institute countries (EIA ends 2023)"
+   },
+   {
+    "entity": "country-years 2000+",
+    "column_name": "fossil_share_energy (energy mix)",
+    "null_pct": 64.57,
+    "treatment": "mix only for Energy Institute countries; others in EI residual regions"
+   },
+   {
+    "entity": "country-years 2000+",
+    "column_name": "electricity_generation",
+    "null_pct": 2.91,
+    "treatment": "Ember covers ~214 countries 2000-2024"
+   },
+   {
+    "entity": "country-years 2000+",
+    "column_name": "carbon_intensity_elec",
+    "null_pct": 3.37,
+    "treatment": "Ember; implausible values flagged"
+   },
+   {
+    "entity": "country-years 2000+",
+    "column_name": "gdp",
+    "null_pct": 32.02,
+    "treatment": "Maddison GDP ends 2022 and misses small countries"
+   },
+   {
+    "entity": "country-years 2000+",
+    "column_name": "co2_mt (joined)",
+    "null_pct": 7.77,
+    "treatment": "CO2 file ends 2024; joined on entity + year"
+   },
+   {
+    "entity": "country-years 2000+",
+    "column_name": "population",
+    "null_pct": 0.68,
+    "treatment": "per-capita measures NULL where missing"
+   }
+  ],
+  "issues": {
+   "exact duplicate rows dropped (energy)": 0,
+   "duplicate entity x year keys (energy, after exact dedupe)": 0,
+   "rows with unparseable year dropped": 0,
+   "aggregate rows (World, continents, income groups, EI/EIA/Ember/Shift regions) kept out of country rankings": 5773,
+   "aggregate entities with empty iso_code": 87,
+   "entities with OWID_ iso prefix": 0,
+   "historical-country rows (USSR, Yugoslavia, Czechoslovakia, East/West Germany, Serbia and Montenegro)": 313,
+   "Kosovo rows with empty iso_code (assigned OWID_KOS, kept as a country)": 26,
+   "Antarctica rows (ISO ATA, no OWID continent; continent set by override)": 44,
+   "entity-years with population/GDP only, no energy value (left out of facts)": 9537,
+   "part-year rows after the latest complete electricity year (flagged provisional)": 106,
+   "energy per capita > 3x the year's country p95 (flagged; refinery / tiny-population territories)": 23,
+   "grid carbon intensity implausible for its fuel mix (flagged, out of intensity ranking)": 160,
+   "electricity source breakdown incomplete (sources <> generation by > 2%, nearly all pre-2000)": 980,
+   "energy-mix shares outside 0..100": 0,
+   "fossil + low-carbon share of energy <> 100 (> 0.5 pp)": 0,
+   "energy rows with no CO2 row to join": 3197,
+   "CO2 vs energy ISO code mismatches": 0,
+   "double counting avoided: naive SUM of primary energy over ALL rows in 2023, % of World": 923,
+   "RI: clean energy rows lost in dim joins": 0
+  },
+  "assertions": {
+   "clean rows = distinct raw rows (energy)": "PASS",
+   "one row per entity x year (energy)": "PASS",
+   "one row per entity x year (CO2)": "PASS",
+   "year parsed and within 1900..2030": "PASS",
+   "entity_key unique": "PASS",
+   "every entity classified (country / historical / aggregate)": "PASS",
+   "every real country has a continent": "PASS",
+   "country ISO codes are 3 letters (OWID_KOS for Kosovo)": "PASS",
+   "no aggregate carries a plain ISO code": "PASS",
+   "one ISO code per entity and no ISO code shared": "PASS",
+   "CO2 ISO codes agree with energy ISO codes": "PASS",
+   "shares within 0..100": "PASS",
+   "fossil + low-carbon share of energy = 100 (+/- 0.5)": "PASS",
+   "renewables share <= low-carbon share (energy and electricity)": "PASS",
+   "no negative consumption or generation": "PASS",
+   "countries 2000+: electricity sources sum to generation (+/- 2%)": "PASS",
+   "countries 2000+: fossil + low-carbon electricity = generation (+/- 1%)": "PASS",
+   "nine source shares of energy sum to 100 (+/- 0.5) where all present": "PASS",
+   "sum of countries = World electricity (+/- 1%), 2000..latest [full data only]": "PASS",
+   "sum of countries = World primary energy (+/- 1%), 2000..latest all-country year [full data only]": "PASS",
+   "bottom-up continent low-carbon electricity share = OWID continent row (+/- 0.05 pp) [full data only]": "PASS",
+   "World row has primary energy for every year 1965..latest mix year": "PASS",
+   "all six OWID continent rows present": "PASS",
+   "fact_energy_year keeps every clean row with energy data (RI)": "PASS",
+   "fact keys exist in dim_entity, dim_year, dim_source": "PASS",
+   "country rankings contain no aggregates or historical states": "PASS",
+   "every analysed raw column is documented in the codebook": "PASS"
+  }
+ },
+ "engine": {"duckdb": "1.5.6", "python": "3.13.5"},
+ "sql_timings_s": {
+  "00_duckdb_compat.sql": 0.001,
+  "01_staging.sql": 0.709,
+  "02_cleaning.sql": 0.842,
+  "03_model.sql": 0.057,
+  "04_analysis.sql": 0.117,
+  "05_quality_checks.sql": 0.133
+ }
+}

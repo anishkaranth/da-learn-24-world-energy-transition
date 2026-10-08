@@ -1,0 +1,28 @@
+check_name,failed_rows,status
+CO2 ISO codes agree with energy ISO codes,0,PASS
+World row has primary energy for every year 1965..latest mix year,0,PASS
+all six OWID continent rows present,0,PASS
+bottom-up continent low-carbon electricity share = OWID continent row (+/- 0.05 pp) [full data only],0,PASS
+clean rows = distinct raw rows (energy),0,PASS
+countries 2000+: electricity sources sum to generation (+/- 2%),0,PASS
+countries 2000+: fossil + low-carbon electricity = generation (+/- 1%),0,PASS
+country ISO codes are 3 letters (OWID_KOS for Kosovo),0,PASS
+country rankings contain no aggregates or historical states,0,PASS
+entity_key unique,0,PASS
+every analysed raw column is documented in the codebook,0,PASS
+every entity classified (country / historical / aggregate),0,PASS
+every real country has a continent,0,PASS
+"fact keys exist in dim_entity, dim_year, dim_source",0,PASS
+fact_energy_year keeps every clean row with energy data (RI),0,PASS
+fossil + low-carbon share of energy = 100 (+/- 0.5),0,PASS
+nine source shares of energy sum to 100 (+/- 0.5) where all present,0,PASS
+no aggregate carries a plain ISO code,0,PASS
+no negative consumption or generation,0,PASS
+one ISO code per entity and no ISO code shared,0,PASS
+one row per entity x year (CO2),0,PASS
+one row per entity x year (energy),0,PASS
+renewables share <= low-carbon share (energy and electricity),0,PASS
+shares within 0..100,0,PASS
+"sum of countries = World electricity (+/- 1%), 2000..latest [full data only]",0,PASS
+"sum of countries = World primary energy (+/- 1%), 2000..latest all-country year [full data only]",0,PASS
+year parsed and within 1900..2030,0,PASS

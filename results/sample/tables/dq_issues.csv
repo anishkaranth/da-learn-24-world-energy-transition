@@ -1,0 +1,21 @@
+check_name,affected_rows
+"Antarctica rows (ISO ATA, no OWID continent; continent set by override)",44
+CO2 vs energy ISO code mismatches,0
+"Kosovo rows with empty iso_code (assigned OWID_KOS, kept as a country)",26
+RI: clean energy rows lost in dim joins,0
+aggregate entities with empty iso_code,16
+"aggregate rows (World, continents, income groups, EI/EIA/Ember/Shift regions) kept out of country rankings",1750
+"double counting avoided: naive SUM of primary energy over ALL rows in 2023, % of World",384
+"duplicate entity x year keys (energy, after exact dedupe)",0
+"electricity source breakdown incomplete (sources <> generation by > 2%, nearly all pre-2000)",278
+energy per capita > 3x the year's country p95 (flagged; refinery / tiny-population territories),11
+energy rows with no CO2 row to join,558
+energy-mix shares outside 0..100,0
+entities with OWID_ iso prefix,0
+"entity-years with population/GDP only, no energy value (left out of facts)",2883
+exact duplicate rows dropped (energy),0
+fossil + low-carbon share of energy <> 100 (> 0.5 pp),0
+"grid carbon intensity implausible for its fuel mix (flagged, out of intensity ranking)",75
+"historical-country rows (USSR, Yugoslavia, Czechoslovakia, East/West Germany, Serbia and Montenegro)",313
+part-year rows after the latest complete electricity year (flagged provisional),31
+rows with unparseable year dropped,0
